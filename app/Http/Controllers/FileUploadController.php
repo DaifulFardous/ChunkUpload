@@ -12,9 +12,9 @@ class FileUploadController extends Controller
     {
         $file = $request->file('file');
 
-        $chunkIndex = $request->input('dzChunkIndex');
-        $chunkTotal = $request->input('dzTotalChunkCount');
-        $chunkSize = $request->input('dzChunkSize');
+        $chunkIndex = $request->input('dzchunkindex');
+        $chunkTotal = $request->input('dztotalchunkcount');
+        $chunkSize = $request->input('dzchunksize');
 
         $file->storeAs(
             'temp',
